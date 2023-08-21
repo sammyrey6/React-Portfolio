@@ -4,6 +4,8 @@ import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js'; // Include Materialize JavaScript
 import Navigation from './components/Navigation';
 import Header from './components/Header';
+import LandingPage from './components/landing';
+
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
     <div className="App">
       <Navigation />
       <Header />
+      <LandingPage /> 
     </div>
   );
 }

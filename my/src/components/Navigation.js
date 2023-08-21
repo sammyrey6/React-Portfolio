@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import M from 'materialize-css';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+
 import Dropdown from './DropdownContent/Dropdown'; // Import the Dropdown component
 
 const Navigation = () => {
+    const dropdownRef = useRef(null);
   // Initialize dropdown menus when the component mounts
   useEffect(() => {
     // Initialize all dropdown triggers
@@ -11,7 +12,21 @@ const Navigation = () => {
     if (elems.length > 0) {
       M.Dropdown.init(elems, { constrainWidth: false });
     }
+        // Add a click event listener to close the dropdown when clicked outside of it
+        document.addEventListener('click', handleDocumentClick);
+
+        return () => {
+          // Cleanup by removing the click event listener when the component unmounts
+          document.removeEventListener('click', handleDocumentClick);
+        };
   }, []);
+
+  const handleDocumentClick = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      // Clicked outside the dropdown, close it
+      M.Dropdown.getInstance(dropdownRef.current).close();
+    }
+  };
 
   return (
     <nav>
