@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import M from 'materialize-css';
-
+import './styles/Navigation.css'
 import Dropdown from './DropdownContent/Dropdown'; // Import the Dropdown component
 
 const Navigation = () => {
@@ -29,25 +29,34 @@ const Navigation = () => {
   };
 
   return (
-    <nav>
-      <div className="nav-wrapper">
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
-          {/* Links for specific projects */}
-          <li><a href="https://github.com/Vlad1slav86/Pear-Music">Pear Music</a></li>
-          <li><a href="https://github.com/dustinii/BDSM">BDSM</a></li>
-          <li><a href="https://github.com/dustinii/HOMEZ">HOMEZ</a></li>
+    <div className="nav-container">
+      <nav>
+        <div className="nav-wrapper">
+          <ul id="nav-mobile" className="left hide-on-med-and-down">
+            {/* Links for specific projects */}
+            <li><a href="https://github.com/Vlad1slav86/Pear-Music">Pear Music</a></li>
+            <li><a href="https://github.com/dustinii/BDSM">BDSM</a></li>
+            <li><a href="https://github.com/dustinii/HOMEZ">HOMEZ</a></li>
 
-          {/* Dropdown link */}
-          <li>
-            <a className="dropdown-trigger" href="#!" data-target="dropdown-menu">
-              More Projects
-            </a>
-          </li>
+            {/* Dropdown link */}
+            <li>
+              <a className="dropdown-trigger" href="#!" data-target="dropdown-menu">
+                More Projects
+                <Dropdown />
+              </a>
+            </li>
+          </ul>
+          <div className="nav-wrapper">
+        <a href="#" className="brand-logo"></a>
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <li><a href="#">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-        {/* Include the Dropdown component */}
-        <Dropdown />
       </div>
-    </nav>
+        </div>
+      </nav>
+    </div>
   );
 };
 
