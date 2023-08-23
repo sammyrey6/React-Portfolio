@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../images/Resume.pdf';
 
 const AboutMe = () => {
   return (
@@ -21,6 +22,9 @@ const AboutMe = () => {
       </p>
       <p>
         I bring a strong technological background, proficiency in electronics mathematics, and expertise in troubleshooting and repairing electrical and electromechanical systems to any team. I am passionate about contributing to the success of an aviation organization and driving operational excellence.
+      </p>
+      <p>
+        If you find me interesting you should look at my res <linK>resume{resume} </linK>
       </p>
     </section>
   );

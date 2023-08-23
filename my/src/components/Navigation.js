@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import M from 'materialize-css';
-import './styles/Navigation.css'
+import './styles/Navigation.css';
+import samuelImage from'../images/2.png'
 import Dropdown from './DropdownContent/Dropdown'; // Import the Dropdown component
 
 const Navigation = () => {
@@ -46,14 +47,16 @@ const Navigation = () => {
               </a>
             </li>
           </ul>
-          <div className="nav-wrapper" id= "about-side">
-        <a href="#" className="brand-logo"></a>
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><a href="#">About</a></li>
+          
+          <img src={samuelImage} alt="Your Image" />
+          
+        <ul id="nav-mobile" className="right ">
+          <li><a href="/about">About</a></li>
           <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
-      </div>
+   
+
         </div>
       </nav>
     </div>
