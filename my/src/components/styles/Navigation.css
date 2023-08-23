@@ -1,7 +1,23 @@
 .nav-container {
     display: flex;
     justify-content: flex-start;
+    color: black;
   }
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #282c34;
+  }
+
+  #about-side {
+    color: white;
+    justify-content: flex-end;
+
+  }
+
   
   /* Additional styles if needed */
   

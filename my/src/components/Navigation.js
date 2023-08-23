@@ -46,7 +46,7 @@ const Navigation = () => {
               </a>
             </li>
           </ul>
-          <div className="nav-wrapper">
+          <div className="nav-wrapper" id= "about-side">
         <a href="#" className="brand-logo"></a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li><a href="#">About</a></li>
