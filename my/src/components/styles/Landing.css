@@ -1,0 +1,100 @@
+/* LandingPage.css */
+
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Style the main content container */
+.container {
+  max-width: 1000px; /* Adjust the maximum width as per your preference */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Rest of your CSS styles... */
+
+  
+  /* Style each section */
+  .section {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .section p {
+    font-size: 16px;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Style links */
+  a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  /* Add this to your existing CSS or LandingPage.css file */
+
+/* Style the profile photo as the main product */
+.profile-photo {
+    width: 200px; /* Adjust the width to make it larger */
+    height: 200px; /* Adjust the height to maintain aspect ratio */
+    border-radius: 50%; /* Makes it a circular photo */
+    object-fit: cover; /* Ensures the photo fits within the container */
+    margin: 0 auto 20px; /* Center the photo horizontally and add margin for spacing */
+    display: block; /* Ensure the image is a block element for margin auto to work */
+  }
+  
+  /* Add these styles to your Landing.css */
+
+/* Style the hero section */
+.hero {
+  background-color: gray; /* Change the background color to your desired color */
+  color: #fff; /* Text color */
+  text-align: center;
+  padding: 80px 0; /* Adjust the padding to control the spacing */
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Style the hero image */
+
+.hero p {
+  font-size: 18px;
+  margin: 20px 0;
+}
